@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="addelement">
+            <h2>To-Do List <img src="imgs/list.png" alt="img"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Your Text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="filter-options">
+                <button onclick="filterTasks('all')">All</button>
+                <button onclick="filterTasks('completed')">Completed</button>
+                <button onclick="filterTasks('pending')">Pending</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
