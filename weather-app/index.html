@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col justify-center items-center h-screen">
+    <div
+      class="w-[600px] main-container bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center flex flex-col items-center justify-center rounded-lg shadow-lg p-5"
+    >
+      <h2 class="font-bold text-4xl">Weather App</h2>
+      <hr class="bg-white" />
+      <div class="mt-5 flex gap-2">
+        <input class="bg-white w-[400px] text-black p-3 rounded-lg" type="text" name="city" id="city" placeholder="Enter City Name...">
+        <button class="bg-blue-500 rounded-lg px-6 py-2" onclick="getWeather()">Search</button>
+      </div>
+      <div class="weatherInfo">
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
